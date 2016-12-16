@@ -1,0 +1,27 @@
+﻿@model List<MVCCustomRoute.Models.CityModel>
+
+@{
+    ViewBag.Title = "MVC Custom Route";
+}
+
+
+<div class="jumbotron">
+    <h1>MVC Custom Route </h1>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="form-group">
+
+            @foreach (MVCCustomRoute.Models.CityModel md in Model)
+            {
+                foreach (MVCCustomRoute.Models.AreaModel ar in md.area)
+                {
+                    <label> @ar.name </label>
+                    <br />
+                }
+            }
+
+        </div>
+    </div>
+</div>

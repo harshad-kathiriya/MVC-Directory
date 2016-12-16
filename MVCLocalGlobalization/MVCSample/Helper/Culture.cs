@@ -16,25 +16,16 @@ namespace MVCLocalGlobalization.Helper
             get
             {
                 if (Thread.CurrentThread.CurrentUICulture.Name == "hi-IN")
-                {
                     return "hi-IN";
-                }
                 else
-                {
                     return "en-US";
-                }
             }
             set
             {
                 if (value == "hi-IN")
-                {
                     Thread.CurrentThread.CurrentUICulture = new CultureInfo("hi-IN");
-                }
-
                 else
-                {
                     Thread.CurrentThread.CurrentUICulture = CultureInfo.InvariantCulture;
-                }
 
                 Thread.CurrentThread.CurrentCulture = Thread.CurrentThread.CurrentUICulture;
 
