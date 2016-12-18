@@ -1,0 +1,54 @@
+﻿@model BindDropdown.Models.CountryModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        @{
+
+            <h2>Static Binding Directly in View</h2>
+            <div>
+                @Html.DropDownList("CountryExp1", new List<SelectListItem>{
+           new SelectListItem(){Text="India",Value="IN"},
+           new SelectListItem() {Text="USA",Value="US"},
+           new SelectListItem(){Text="UK",Value="UK"}
+           }, "Select Country")
+            </div>
+            <br />
+        }
+
+    </div>
+
+    <br />
+    <div>
+        @{
+            <h2>ViewBag/ViewData Binding </h2>
+            <div>
+                <h5>ViewBag</h5><br />
+                @Html.DropDownList("CountryExp3", (List<SelectListItem>)ViewBag.Country, "Select Country")
+                <br />
+                <h5>ViewData</h5>
+                @Html.DropDownList("CountryExp4", (IEnumerable<SelectListItem>)ViewData["Country"], "Select Country")
+            </div>
+        }
+    </div>
+    <br />
+    <div>
+        @{
+            <h2>Model binding</h2>
+            <div>
+                @Html.DropDownList("CountryExp5", Model.CountryList, "Select Country")
+
+            </div>
+        }
+    </div>
+</body>
+</html>

@@ -10,8 +10,9 @@ namespace MVCLocalGlobalization.Controllers
 {
     public class HomeController : Controller
     {
+
         /// <summary>
-        /// 
+        /// Home controller
         /// </summary>
         /// <param name="culture">pass the culture (hi-IN, en-US)</param>
         /// <returns></returns>
