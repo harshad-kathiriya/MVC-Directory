@@ -10,7 +10,6 @@ namespace MVCLocalGlobalization.Controllers
 {
     public class HomeController : Controller
     {
-
         /// <summary>
         /// Home controller
         /// </summary>
@@ -26,5 +25,6 @@ namespace MVCLocalGlobalization.Controllers
             UserModel userModel = new UserModel();
             return View(userModel);
         }
+
     }
 }
