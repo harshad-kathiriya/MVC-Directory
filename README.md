@@ -10,6 +10,4 @@ If you want more details about the code then visit the blog:
 http://harshadkathiriya.wordpress.com
 
 
-Also, if you have any questions/feedback then post on blog or directly reach out to me at harshad.kathiriya@gmail.com
-
 
